@@ -2,7 +2,7 @@
 
 External Anthropic Claude Managed Agents platform target for [Kastor](https://github.com/weirdGuy/kastor).
 
-The plugin owns Anthropic SDK integration, target configuration, lifecycle reconciliation, normalization, drift comparison, MCP credential checks, and tool-permission readiness checks. Kastor core sends protocol-v1 resources and owns planning, ordering, state, and locking.
+The plugin owns Anthropic SDK integration, target configuration, lifecycle reconciliation, normalization, drift comparison, MCP credential checks, tool-permission readiness checks, and the hosted-agent starter returned by `kastor new`. Kastor core sends protocol-v1 resources and owns planning, ordering, state, and locking.
 
 > Status: pre-release. The protocol-v1 implementation is available for integration testing but no stable binary has been released yet.
 
@@ -35,6 +35,12 @@ export KASTOR_PLUGIN_ANTHROPIC=/absolute/path/to/kastor-anthropic
 ```
 
 The source address is `github.com/getkastordev/kastor-anthropic`.
+
+Create and lock a hosted Anthropic starter with:
+
+```sh
+kastor new --from github.com/getkastordev/kastor-anthropic demo
+```
 
 ## License
 

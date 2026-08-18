@@ -1,0 +1,14 @@
+agent "assistant" {
+  description = "A production Claude agent"
+
+  model         = model.claude
+  system_prompt = prompt.assistant_system
+
+  input "question" {
+    type = string
+  }
+
+  output "answer" {
+    type = string
+  }
+}

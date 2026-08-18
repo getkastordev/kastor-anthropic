@@ -5,7 +5,7 @@ go 1.26.4
 require (
 	github.com/anthropics/anthropic-sdk-go v1.61.0
 	github.com/google/go-cmp v0.7.0
-	github.com/weirdGuy/kastor v0.2.1-0.20260818093133-f19edea5676e
+	github.com/weirdGuy/kastor v0.2.1-0.20260818123522-f7f6ae6cb6f9
 )
 
 require (
