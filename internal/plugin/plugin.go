@@ -24,6 +24,7 @@ func (Handler) Metadata(context.Context) (protocol.Metadata, error) {
 		Kinds:    []protocol.Kind{protocol.KindPlatform},
 		Capabilities: protocol.Capabilities{
 			CredentialSchemes: []string{protocol.SchemeConnection},
+			Scaffold:          true,
 			Config: map[string]protocol.ConfigAttribute{
 				"api_key_env": {Type: "string", Description: "Environment variable containing the Anthropic API key"},
 				"vault_id":    {Type: "string", Description: "Claude credential vault used by readiness checks"},

@@ -1,0 +1,7 @@
+---
+name     = "assistant_system"
+requires = ["question"]
+---
+Answer the user's question accurately and concisely.
+
+Question: {{question}}
