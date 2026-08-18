@@ -21,3 +21,8 @@ jobs:
       - run: go vet ./...
       - name: Verify formatting
         run: test -z "$(gofmt -l .)"
+      - uses: goreleaser/goreleaser-action@v6
+        with:
+          distribution: goreleaser
+          version: "~> v2"
+          args: release --snapshot --clean
